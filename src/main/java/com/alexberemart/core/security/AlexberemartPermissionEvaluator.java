@@ -1,7 +1,7 @@
 package com.alexberemart.core.security;
 
 import com.alexberemart.core.model.vo.user.Permission;
-import Alexberemart.core.util.StringUtils;
+import com.alexberemart.core.util.StringUtils;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
