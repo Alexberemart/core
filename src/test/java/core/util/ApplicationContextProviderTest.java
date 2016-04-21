@@ -2,7 +2,7 @@ package core.util;
 
 import static org.junit.Assert.*;
 
-import Alexberemart.core.util.ApplicationContextProvider;
+import com.alexberemart.core.util.ApplicationContextProvider;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@ContextConfiguration(locations = "classpath:Alexberemart/core/context.xml")
+@ContextConfiguration(locations = "classpath:com/alexberemart/core/context.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ApplicationContextProviderTest {
 

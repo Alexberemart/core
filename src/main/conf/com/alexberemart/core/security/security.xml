@@ -37,11 +37,11 @@
         <!--</security:authentication-provider>-->
     </security:authentication-manager>
 
-    <bean id="userDetailsService" class="Alexberemart.core.security.MyUserDetailsService"/>
+    <bean id="userDetailsService" class="com.alexberemart.core.security.MyUserDetailsService"/>
 
-    <bean id="alexberemartPermissionEvaluator" class="Alexberemart.core.security.AlexberemartPermissionEvaluator"></bean>
+    <bean id="alexberemartPermissionEvaluator" class="com.alexberemart.core.security.AlexberemartPermissionEvaluator"></bean>
 
-    <bean id="methodSecurityExpressionHandler" class="Alexberemart.core.security.CustomMethodSecurityExpressionHandler">
+    <bean id="methodSecurityExpressionHandler" class="com.alexberemart.core.security.CustomMethodSecurityExpressionHandler">
         <property name="permissionEvaluator" ref="alexberemartPermissionEvaluator"></property>
     </bean>
 

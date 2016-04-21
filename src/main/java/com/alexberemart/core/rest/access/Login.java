@@ -1,6 +1,6 @@
 package com.alexberemart.core.rest.access;
 
-import Alexberemart.core.rest.AbstractRestService;
+import com.alexberemart.core.rest.AbstractRestService;
 import com.google.inject.servlet.RequestScoped;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.security.core.Authentication;

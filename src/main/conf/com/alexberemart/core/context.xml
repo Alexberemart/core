@@ -14,14 +14,14 @@
         <property name="order" value="1" />
         <property name="locations">
             <list>
-                <value>classpath:Alexberemart/core/core.properties</value>
+                <value>classpath:com/alexberemart/core/core.properties</value>
             </list>
         </property>
     </bean>
 
-    <import resource="classpath:Alexberemart/core/security/security.xml" />
+    <import resource="classpath:com/alexberemart/core/security/security.xml" />
 
-    <bean id="applicationContextProvider" class="Alexberemart.core.util.ApplicationContextProvider" />
+    <bean id="applicationContextProvider" class="com.alexberemart.core.util.ApplicationContextProvider" />
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">

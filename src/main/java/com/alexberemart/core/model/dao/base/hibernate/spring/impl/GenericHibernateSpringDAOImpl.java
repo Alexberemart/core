@@ -1,6 +1,6 @@
 package com.alexberemart.core.model.dao.base.hibernate.spring.impl;
 
-import Alexberemart.core.model.dao.base.hibernate.GenericHibernateDAO;
+import com.alexberemart.core.model.dao.base.hibernate.GenericHibernateDAO;
 import com.alexberemart.core.model.vo.base.CreatedUpdatedEntity;
 import org.hibernate.*;
 import org.hibernate.criterion.Criterion;
