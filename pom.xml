@@ -14,6 +14,7 @@
         <spring.security.version>3.2.1.RELEASE</spring.security.version>
         <jersey.version>1.8</jersey.version>
         <maven.site.plugin.version>0.11</maven.site.plugin.version>
+        <maven.deploy.plugin.version>2.8.1</maven.deploy.plugin.version>
     </properties>
 
     <distributionManagement>
@@ -314,6 +315,14 @@
                         <phase>deploy</phase>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>${maven.deploy.plugin.version}</version>
+                <configuration>
+                    <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repository
+                    </altDeploymentRepository>
+                </configuration>
             </plugin>
         </plugins>
     </build>
