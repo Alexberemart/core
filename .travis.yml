@@ -1,11 +1,15 @@
 language: java
 sudo: false
 
+maven:
+  version: 3.2.3
+  config: settings.xml
+
 # Build everything in 'script' phase
 install: /bin/true
 
 script:
-  - mvn -Dmaven.wagon.provider.http=httpclient -U clean verify deploy --settings settings.xml -T 1C
+  - mvn -Dmaven.wagon.provider.http=httpclient -U clean verify deploy -T 1C
 
 jdk:
   - oraclejdk7
