@@ -41,7 +41,7 @@
             <value>true</value>
         </property>
         <property name="validationQuery">
-            <value>$[core.datasource.validationQuery]</value>
+            <value>${core.datasource.validationQuery}</value>
         </property>
     </bean>
 
