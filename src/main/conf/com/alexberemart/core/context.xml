@@ -9,7 +9,7 @@
 
 
     <!-- Allows us to use system properties as variables in this configuration file -->
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <bean class="com.alexberemart.core.config.AlexberemartPropertyPlaceholderConfigurer">
         <property name="ignoreUnresolvablePlaceholders" value="true" />
         <property name="order" value="1" />
         <property name="locations">
@@ -41,7 +41,7 @@
             <value>true</value>
         </property>
         <property name="validationQuery">
-            <value>select 1</value>
+            <value>$[core.datasource.validationQuery]</value>
         </property>
     </bean>
 
